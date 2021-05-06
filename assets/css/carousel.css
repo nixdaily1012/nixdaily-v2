@@ -1,0 +1,148 @@
+/* CAROUSEL SECTION */
+.explore-btn {
+  border-radius: 4px;
+  border: 3px solid white;
+  color: white;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.explore-btn:hover {
+  color: white;
+}
+
+.explore-container {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#section-carousel {
+  color: white;
+}
+
+.section-carousel-1 {
+  background-image: url("../images/carousel_bg1.png");
+}
+.section-carousel-2 {
+  background-image: url("../images/carousel_bg2.png");
+}
+.section-carousel-3 {
+  background-image: url("../images/carousel_bg3.png");
+}
+
+#section-carousel .title {
+  font-family: 'Franklin Gothic Heavy', arial;
+  font-size: 52px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.25em;
+  width: 75%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+#section-carousel .description {
+  font-size: 26px;
+  padding-bottom: 5rem;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.section-carousel-1 .title {
+  padding: 5rem 0;
+}
+.section-carousel-2 .title, .section-carousel-3 .title {
+  padding: 5rem 0 1.5rem 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  user-select: none;
+  display: inline-block;
+  margin-top: -2.5rem;
+  text-decoration: none;
+}
+
+.prev {
+  margin-left: 3rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 3rem;
+}
+
+/* Hover effect similar to Bootstrap 5 */
+.prev:hover, .next:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+/* Fading animation */
+.custom-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 575px) {
+  /* CAROUSEL SECTION */
+  #section-carousel .title {
+    font-size: 26px;
+  }
+  .section-carousel-1 .title {
+    padding: 2.5rem 0;
+  }
+  .section-carousel-2 .title, .section-carousel-3 .title {
+    padding: 2.5rem 0 0.75rem 0;
+  }
+  #section-carousel .description {
+    font-size: 16px;
+    padding-bottom: 2.5rem;
+  }
+
+  .explore-container {
+    padding-bottom: 1.5rem;
+  }
+  .explore-btn {
+    font-size: 18px;
+  }
+  .explore-btn > img {
+    width: 30px;
+  }
+
+  .prev, .next {
+    font-size: 16px;
+  }
+  .prev {
+    margin-left: 1.5rem;
+  }
+  .next {
+    margin-right: 1.5rem;
+  }
+}

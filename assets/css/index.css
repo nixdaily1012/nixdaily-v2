@@ -1,0 +1,17 @@
+/* GENERAL */
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s-section {
+  padding: 3rem;
+}
+
+/* GAMING SECTION */
+#gaming-section {
+  background-color: #fff15c;
+}
+
+/* COLLECTION SECTION */
+#collection-section {
+  background-color: #86ff86;
+}
